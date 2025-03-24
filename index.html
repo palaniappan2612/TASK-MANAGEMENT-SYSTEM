@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="profile">
+        <img src="download.jpg" alt="Profile Picture">
+        <span>I407</span>
+    </div>
+    <h2>TASK MANAGEMENT SYSTEM</h2>
+    <input type="text" id="taskName" placeholder="Task Name">
+    <input type="text" id="taskDesc" placeholder="Task Description">
+    <button onclick="addTask()">Add Task</button>
+    <select id="filter" onchange="renderTasks()">
+        <option value="all">All</option>
+        <option value="pending">Pending</option>
+        <option value="completed">Completed</option>
+    </select>
+    <div id="taskList"></div>
+    <script src="script.js"></script>
+</body>
+</html>
